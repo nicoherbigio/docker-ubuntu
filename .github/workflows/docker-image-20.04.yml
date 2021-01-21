@@ -11,7 +11,9 @@ env:
   DOCKER_IMAGE_CONTEXT_PATH: 20.04/default/
   DOCKERHUB_IMAGE_TAGS: |
     nicoherbigde/ubuntu:20.04
+    nicoherbigio/ubuntu:20.04
     nicoherbigde/ubuntu:focal
+    nicoherbigio/ubuntu:focal
 
 jobs:
   build-and-push:

@@ -11,7 +11,9 @@ env:
   DOCKER_IMAGE_CONTEXT_PATH: 18.04/default/
   DOCKERHUB_IMAGE_TAGS: |
     nicoherbigde/ubuntu:18.04
+    nicoherbigio/ubuntu:18.04
     nicoherbigde/ubuntu:bionic
+    nicoherbigio/ubuntu:bionic
 
 jobs:
   build-and-push:
