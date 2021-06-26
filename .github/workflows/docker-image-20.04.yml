@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+    paths:
+      - '.github/workflows/docker-image-20.04.yml'
+      - '20.04/**'
   schedule:
     - cron: '0 1 * * 1'
 
