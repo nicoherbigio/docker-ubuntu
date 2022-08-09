@@ -2,8 +2,9 @@
 
 ## Supported tags and respective `Dockerfile` links
 
- * [`focal`, `20.04`](https://github.com/nicoherbigio/docker-ubuntu/blob/master/20.04/default/Dockerfile)
- * [`bionic`, `18.04`](https://github.com/nicoherbigio/docker-ubuntu/blob/master/18.04/default/Dockerfile)
+ * [`jammy`, `22.04`](https://github.com/nicoherbigio/docker-ubuntu/blob/main/22.04/default/Dockerfile)
+ * [`focal`, `20.04`](https://github.com/nicoherbigio/docker-ubuntu/blob/main/20.04/default/Dockerfile)
+ * [`bionic`, `18.04`](https://github.com/nicoherbigio/docker-ubuntu/blob/main/18.04/default/Dockerfile)
 
 ## Copyleft
 
