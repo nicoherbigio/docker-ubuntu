@@ -26,23 +26,17 @@ jobs:
             docker-context: 18.04/default
             docker-tags: |
               nicoherbigde/ubuntu:18.04
-              nicoherbigio/ubuntu:18.04
               nicoherbigde/ubuntu:bionic
-              nicoherbigio/ubuntu:bionic
           - version: 20.04
             docker-context: 20.04/default
             docker-tags: |
               nicoherbigde/ubuntu:20.04
-              nicoherbigio/ubuntu:20.04
               nicoherbigde/ubuntu:focal
-              nicoherbigio/ubuntu:focal
           - version: 22.04
             docker-context: 22.04/default
             docker-tags: |
               nicoherbigde/ubuntu:22.04
-              nicoherbigio/ubuntu:22.04
               nicoherbigde/ubuntu:jammy
-              nicoherbigio/ubuntu:jammy
 
     steps:
       - name: Checkout Git Repository
