@@ -6,7 +6,6 @@
 
  * [`jammy`, `22.04`](https://github.com/nicoherbigio/docker-ubuntu/blob/main/22.04/default/Dockerfile)
  * [`focal`, `20.04`](https://github.com/nicoherbigio/docker-ubuntu/blob/main/20.04/default/Dockerfile)
- * [`bionic`, `18.04`](https://github.com/nicoherbigio/docker-ubuntu/blob/main/18.04/default/Dockerfile)
 
 ## How to get this image
 
