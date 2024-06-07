@@ -25,3 +25,11 @@ updates:
     ignore:
       - dependency-name: "ubuntu"
         update-types: [ "version-update:semver-major", "version-update:semver-minor" ]
+
+  - package-ecosystem: "docker"
+    directory: "/24.04/default"
+    schedule:
+      interval: "daily"
+    ignore:
+      - dependency-name: "ubuntu"
+        update-types: [ "version-update:semver-major", "version-update:semver-minor" ]

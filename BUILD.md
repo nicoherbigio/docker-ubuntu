@@ -18,7 +18,7 @@ The following command is required to build the current version.
 
 ```
 # Build the Docker image
-docker build --no-cache --pull --tag nicoherbigde/ubuntu:22.04 22.04/default/
+docker build --no-cache --pull --tag nicoherbigde/ubuntu:24.04 24.04/default/
 ```
 
 > **Hint:** For building an older version, the directory and file paths as well as the Docker tags must be adjusted accordingly, analogous to the previously mentioned command.
@@ -29,7 +29,7 @@ The following command is required to upload the current version.
 
 ```
 # Upload the Docker image to Docker Hub
-docker push nicoherbigde/ubuntu:22.04
+docker push nicoherbigde/ubuntu:24.04
 ```
 
 > **Hint:** For uploading an older version, the Docker tags must be adjusted accordingly, analogous to the previously mentioned command.
