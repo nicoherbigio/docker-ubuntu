@@ -10,7 +10,7 @@ on:
       - '22.04/**'
       - '24.04/**'
   schedule:
-    - cron: '0 1 * * *'
+    - cron: '0 1 * * 6'
   workflow_dispatch:
 
 jobs:
