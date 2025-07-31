@@ -6,7 +6,6 @@ on:
       - main
     paths:
       - '.github/**'
-      - '20.04/**'
       - '22.04/**'
       - '24.04/**'
   schedule:
@@ -20,13 +19,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        version: [20.04, 22.04, 24.04]
+        version: [22.04, 24.04]
         include:
-          - version: 20.04
-            docker-context: 20.04/default
-            docker-tags: |
-              nicoherbigde/ubuntu:20.04
-              nicoherbigde/ubuntu:focal
           - version: 22.04
             docker-context: 22.04/default
             docker-tags: |
