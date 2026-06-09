@@ -1,0 +1,27 @@
+FROM ubuntu:26.04
+
+LABEL maintainer="Nico Herbig <nico@nicoherbig.io>"
+
+
+# Set time zone to "Europe/Berlin".
+
+ENV TZ=Europe/Berlin
+
+RUN set -ex \
+    && apt-get update \
+    && apt-get install -y --no-install-recommends tzdata \
+    && rm -rf /var/lib/apt/lists/* \
+    && ln -fns /usr/share/zoneinfo/${TZ} /etc/localtime \
+    && echo ${TZ} > /etc/timezone
+
+
+# Set locale to "en_US.UTF-8".
+
+RUN set -ex \
+    && apt-get update \
+    && apt-get install -y --no-install-recommends locales \
+    && rm -rf /var/lib/apt/lists/* \
+    && localedef -i de_DE -c -f UTF-8 de_DE.UTF-8 \
+    && localedef -i en_US -c -f UTF-8 en_US.UTF-8
+
+ENV LANG=en_US.UTF-8 LANGUAGE=en_US:en

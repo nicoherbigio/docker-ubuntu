@@ -8,6 +8,7 @@ on:
       - '.github/workflows/**'
       - '22.04/**'
       - '24.04/**'
+      - '26.04/**'
   schedule:
     - cron: '0 1 * * 6'
   workflow_dispatch:
@@ -19,7 +20,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        version: [22.04, 24.04]
+        version: [22.04, 24.04, 26.04]
         include:
           - version: 22.04
             docker-context: 22.04/default
@@ -31,6 +32,11 @@ jobs:
             docker-tags: |
               nicoherbigde/ubuntu:24.04
               nicoherbigde/ubuntu:noble
+          - version: 26.04
+            docker-context: 26.04/default
+            docker-tags: |
+              nicoherbigde/ubuntu:26.04
+              nicoherbigde/ubuntu:resolute
 
     steps:
       - name: Checkout Git Repository
